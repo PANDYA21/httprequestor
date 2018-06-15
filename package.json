@@ -1,0 +1,25 @@
+{
+	"name": "httprequestor",
+	"description": "",
+	"keywords": [],
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"express": "^4.16.3",
+		"xmlhttprequest": "^1.8.0"
+	},
+	"config": {
+		"dev_port": 8080
+	},
+	"scripts": {
+		"test": "START /MIN node ./example_api.js&& node test_node.js"
+	},
+	"author": "bhaumik.pandya@bluetrade.de",
+	"license": "MIT",
+	"devDependencies": {
+		"nodemon": "1.12.1"
+	},
+	"engines": {
+		"node": "9.9.0"
+	}
+}
