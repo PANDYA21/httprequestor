@@ -2,16 +2,6 @@ const Http = require('.');
 const http = new Http();
 
 async function tests() {
-	// const tests = [
-	// 	{ method: 'GET', endpoint: 'https://httpbin.org/anything' },
-	// 	{ method: 'POST', endpoint: 'https://httpbin.org/anything' },
-	// 	{ method: 'PUT', endpoint: 'https://httpbin.org/anything' },
-	// 	{ method: 'PATCH', endpoint: 'https://httpbin.org/anything' },
-	// 	{ method: 'DELETE', endpoint: 'https://httpbin.org/anything' },
-	// 	{ method: 'HEAD', endpoint: 'https://httpbin.org/anything' },
-	// 	{ method: 'OPTIONS', endpoint: 'https://httpbin.org/anything' }
-	// ];
-
 	const tests = [
 		{ method: 'GET', endpoint: 'http://localhost:8081/get' },
 		{ method: 'POST', endpoint: 'http://localhost:8081/post' },

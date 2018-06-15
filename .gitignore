@@ -1,3 +1,4 @@
 *.sublime-workspace
 node_modules
 *_creds.json
+package-lock.json
