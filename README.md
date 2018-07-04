@@ -4,7 +4,7 @@
 
 ### Browser
 ```html
-<script src="/index.js"></script>
+<script src="/dist/index.js"></script>
 <script type="text/javascript" async>
 this.http = new Http();
 (async function fetchData() {
@@ -20,7 +20,7 @@ this.http = new Http();
 ### NodeJs
 To install:
 ```bash
-npm install git+https://github.com/RAW21/httprequestor.git --save
+npm install git+https://github.com/PANDYA21/httprequestor.git --save
 ```
 
 Require and usage:

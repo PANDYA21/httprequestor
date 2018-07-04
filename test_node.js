@@ -1,3 +1,4 @@
+// Run example_api.js before running this test
 const Http = require('.');
 const http = new Http();
 
