@@ -5,6 +5,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"dependencies": {
+		"bluebird": "^3.5.1",
 		"express": "^4.16.3",
 		"xmlhttprequest": "^1.8.0"
 	},
@@ -12,12 +13,16 @@
 		"dev_port": 8080
 	},
 	"scripts": {
+		"build_frontend": "tsc ./src/index.ts --outFile ./dist/browser.js --module \"commonjs\" --target \"es6\"",
+		"build_backend": "tsc ./src/index.ts --outDir ./dist --module \"commonjs\"",
+		"build": "npm run build_frontend&&npm run build_backend",
 		"test": "START /MIN node ./example_api.js&& node test_node.js"
 	},
 	"author": "bhaumik.pandya@bluetrade.de",
 	"license": "MIT",
 	"devDependencies": {
-		"nodemon": "1.12.1"
+		"nodemon": "1.12.1",
+		"typescript": "^2.9.2"
 	},
 	"engines": {
 		"node": "9.9.0"
