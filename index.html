@@ -6,22 +6,21 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>HTTP</title>
 		<link rel="stylesheet" href="">
-		<!-- <script src="/index.js"></script> -->
-		<script src="/dist/browser.js"></script>
+		<script src="/dist/index.js"></script>
 		<script type="text/javascript" async>
 		this.http = new Http();
 		async function tryIt() {
 			this.resp = await this.http.get({
-				endpoint: '/index.html',
-				additional_headers: [{ 'content-type': 'application/json' }]
+				endpoint: 'https://raw.githubusercontent.com/PANDYA21/httprequestor/master/README.md'
 			});
 			console.log(this.resp);
+			document.getElementById('body').innerHTML = this.resp.response;
 		}
 		(tryIt());
 		</script>
 	</head>
 
-	<body>
+	<body id="body">
 	</body>
 
 </html>

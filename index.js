@@ -1,1 +1,1 @@
-module.exports = require('./dist').Http;
+module.exports = require('./dist/');
